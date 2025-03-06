@@ -1,0 +1,16 @@
+
+::ng-deep {
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    label {
+      min-width: 200px;
+    }
+  }
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}

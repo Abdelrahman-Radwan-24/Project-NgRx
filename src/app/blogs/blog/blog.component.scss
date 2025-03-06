@@ -1,0 +1,26 @@
+
+.blog {
+    text-align: center;
+    max-width: 590px;
+    margin: 1rem auto;
+
+    ::ng-deep {
+        .bg-dark {
+            background-color: #1b1a1f;
+            color: #fff;
+        }
+        .p-datatable-thead {
+            background-color: #2a292f;
+            color: #fff;
+
+        }
+    }
+}
+
+.blog-thumbnail {
+    width: 275px;
+    margin: 2rem auto ;
+    display: block;
+    border-radius: 4px;
+}
+

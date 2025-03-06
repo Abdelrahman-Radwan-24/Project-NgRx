@@ -1,0 +1,20 @@
+<section class="login-page">
+  <h2>Login</h2>
+  <form [formGroup]="form" class="login-form">
+    <div class="form-group">
+      <input
+        type="email"
+        placeholder="Email"
+        pInputText
+        formControlName="email"
+      />
+    </div>
+
+    <div class="form-group">
+      <p-password formControlName="password" [toggleMask]="true"></p-password>
+    </div>
+    <button class="btn" (click)="login()" [disabled]="!form.valid">
+      Login
+    </button>
+  </form>
+</section>
