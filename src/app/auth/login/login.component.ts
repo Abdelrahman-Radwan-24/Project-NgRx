@@ -20,8 +20,8 @@ import { login } from "../auth.action";
 })
 export class LoginComponent implements OnInit {
   form: FormGroup = new FormGroup({
-    email: new FormControl("swe.abdelrahman.a.radwan@gmail.com", [Validators.required]),
-    password: new FormControl("1234", [Validators.required]),
+    name: new FormControl("Admin", [Validators.required]),
+    password: new FormControl("Admin@2025$", [Validators.required]),
   });
 
   constructor(
@@ -34,9 +34,9 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   login() {
-    const {email , password} = this.form.value
+    const {name , password} = this.form.value
 
-    this.auth.login(email , password)
+    this.auth.login(name , password)
     .pipe(tap(user => {
       console.log(user)
       const newUser = login({user})
